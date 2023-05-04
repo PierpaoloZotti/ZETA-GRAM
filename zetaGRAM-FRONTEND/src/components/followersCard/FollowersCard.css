@@ -1,0 +1,21 @@
+.follower-container {
+   margin-top: 2rem;
+}
+.follower-container > h3 {
+   font-weight: 700;
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+.follower-card {
+   width: 100%;
+   justify-content: space-between;
+   padding: 1rem 0;
+}
+.l-fcard {
+   gap: 0.6rem;
+}
+.l-fcard > img {
+   width: 3rem;
+   height: 3rem;
+   border-radius: 100%;
+}

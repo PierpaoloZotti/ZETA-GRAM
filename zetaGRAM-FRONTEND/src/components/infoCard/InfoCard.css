@@ -1,0 +1,33 @@
+.infoCard-container {
+   background-color: var(--cardColor);
+   box-shadow: var(--profileShadow);
+   border-radius: 1rem;
+   margin-top: 2rem;
+}
+.infoHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 2rem;
+}
+
+.infoHeader > h3 {
+   font-weight: 700;
+   font-size: 1.5rem;
+}
+.infoHeader > :nth-child(2) {
+   cursor: pointer;
+   transition: all 0.15s ease-in;
+}
+.infoHeader > :nth-child(2):hover {
+   transform: scale(1.1);
+   transition: all 0.15s ease-in;
+   filter: drop-shadow(0 10px 6px rgba(0, 0, 0, 0.3));
+}
+.info {
+   margin-bottom: 1rem;
+}
+.infoButton {
+   width: 100%;
+   padding: 0.8rem 0;
+}

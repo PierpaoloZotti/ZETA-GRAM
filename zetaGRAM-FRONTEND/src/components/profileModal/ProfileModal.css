@@ -1,0 +1,16 @@
+.infoForm {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   border-radius: 1rem;
+}
+.inputModal {
+   display: flex;
+   width: 100%;
+   gap: 1rem;
+}
+.bModal {
+   width: 60%;
+}

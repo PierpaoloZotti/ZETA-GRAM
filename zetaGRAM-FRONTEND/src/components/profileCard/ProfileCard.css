@@ -1,0 +1,54 @@
+.profileCard-Container {
+   border-radius: 16px;
+   overflow: clip;
+   position: relative;
+   background: var(--cardColor);
+   box-shadow: var(--profileShadow);
+   margin-bottom: 1rem 0;
+}
+.profileCover {
+   width: 100%;
+   height: 30%;
+   margin-bottom: 4rem;
+   position: relative;
+}
+.profileCover > img {
+   width: 100%;
+   height: 100%;
+}
+
+.profilePic > img {
+   width: 6rem;
+   height: 6rem;
+   border-radius: 50%;
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translate(-50%, 50%);
+   box-shadow: var(--profileShadow);
+}
+.statsProfile {
+   width: 100%;
+   justify-content: space-around;
+   margin-top: 1rem;
+   padding: 0 1rem;
+}
+.myProfile {
+   color: var(--orange);
+   cursor: pointer;
+}
+.h-divider {
+   height: 1px;
+   width: 100%;
+   background: var(--black);
+   opacity: 0.4;
+}
+.v-divider {
+   width: 1px;
+   height: 50px;
+   background: var(--black);
+   opacity: 0.4;
+}
+.stat {
+   margin-bottom: 1rem;
+}

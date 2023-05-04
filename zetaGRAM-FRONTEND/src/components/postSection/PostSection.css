@@ -1,0 +1,22 @@
+.post-container {
+   gap: 1rem;
+}
+.post {
+   background-color: var(--cardColor);
+   width: 100%;
+   border-radius: 1rem;
+   box-shadow: var(--profileShadow);
+}
+.post > :nth-child(1) {
+   border-radius: inherit;
+   width: 100%;
+   max-height: 20rem;
+   object-fit: cover;
+}
+.post .icons {
+   padding: 1rem 0;
+   gap: 1.5rem;
+}
+.p-likes {
+   padding: 0.5rem 0;
+}

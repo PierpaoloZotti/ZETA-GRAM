@@ -1,0 +1,70 @@
+.postShare {
+   display: flex;
+   border-radius: 1rem;
+   background-color: var(--cardColor);
+   gap: 1rem;
+   width: 100%;
+   box-shadow: var(--profileShadow);
+}
+.postShare > :nth-child(1) {
+   height: 3rem;
+   width: 3rem;
+   border-radius: 50%;
+}
+.postShare-container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.postShare > div > input {
+   background-color: var(--inputColor);
+   border-radius: 10px;
+   padding: 10px;
+   border: none;
+   outline: none;
+   font-size: 17px;
+   font-weight: 600;
+   width: 100%;
+}
+.postOptions {
+   display: flex;
+   justify-content: space-around;
+}
+.option {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.option:nth-child(1) {
+   color: var(--photo);
+}
+.option:nth-child(2) {
+   color: var(--video);
+}
+.option:nth-child(3) {
+   color: var(--location);
+}
+.option:nth-child(4) {
+   color: var(--schedule);
+}
+.previewImage {
+   position: relative;
+}
+.previewImage > svg {
+   position: absolute;
+   right: 1rem;
+   top: 0.5rem;
+   cursor: pointer;
+}
+.previewImage > img {
+   width: 100%;
+   max-height: 20rem;
+   object-fit: cover;
+   border-radius: 0.5rem;
+}

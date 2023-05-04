@@ -1,0 +1,30 @@
+.logoSearch-container,
+.searchBar {
+   align-items: center;
+}
+.logoSearch-container {
+   justify-content: space-between;
+}
+.searchBar {
+   width: 80%;
+   background: var(--hrColor);
+   padding: 3px 5px;
+   border-radius: 6px;
+   justify-content: space-between;
+}
+.searchBar > input {
+   border: none;
+   outline: none;
+   background: var(--hrColor);
+}
+.bSearch {
+   display: grid;
+   place-items: center;
+   padding: 2px 2px;
+   border-radius: 6px;
+   background: var(--buttonBg);
+   cursor: pointer;
+}
+.bSearch svg {
+   fill: white;
+}

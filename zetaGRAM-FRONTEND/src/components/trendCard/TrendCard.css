@@ -1,0 +1,19 @@
+.trendCard {
+   background: var(--cardColor);
+   width: 100%;
+   border-radius: 1rem;
+   box-shadow: var(--profileShadow);
+}
+.trendCard > h2 {
+   font-size: 1.8rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+}
+.trend {
+   padding: 0.5rem 0;
+}
+
+.trend > span:nth-of-type(1) {
+   font-weight: bold;
+   font-size: 1.3rem;
+}
