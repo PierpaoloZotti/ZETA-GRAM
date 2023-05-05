@@ -2,14 +2,17 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+
+//Import routes
 import AuthRoute from './Routes/AuthRoute.js';
 import UserRoute from './Routes/UserRoute.js';
-dotenv.config()
+import PostRoute from './Routes/PostRoute.js';
+
 
 //Routes
 const app = express();
 
-
+dotenv.config()
 
 //Middlewares
 
@@ -27,3 +30,4 @@ mongoose.connect(process.env.MONGO_DB, { useNewUrlParser: true, useUnifiedTopolo
 //Routes Use
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute);
+app.use('/post', PostRoute);
