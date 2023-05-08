@@ -94,6 +94,10 @@ a {
    transform: scale(1.05);
    transition: all 0.3s;
 }
+.button:disabled {
+   background: gray;
+   pointer-events: none;
+}
 .App {
    background-color: #f3f3f3;
    overflow: hidden;

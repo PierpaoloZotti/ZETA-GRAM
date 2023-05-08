@@ -75,8 +75,8 @@ export const followUser = async (req, res) => {
             const followUser = await UserModel.findById(id)
             const followingUser = await UserModel.findById(currentUserId)
             if (!followUser.following.includes(currentUserId)) {
-                await followUser.updateOne({ $push: { following: currentUserId } })
-                await followingUser.updateOne({ $push: { followers: id } })
+                await followUser.updateOne({ $push: { followers: currentUserId } })
+                await followingUser.updateOne({ $push: { following: id } })
                 res.status(200).json("User followed successfully")
             } else {
                 res.status(200).json("User already followed by You")
@@ -100,8 +100,8 @@ export const unfollowUser = async (req, res) => {
             const followUser = await UserModel.findById(id)
             const followingUser = await UserModel.findById(currentUserId)
             if (followUser.following.includes(currentUserId)) {
-                await followUser.updateOne({ $pull: { following: currentUserId } })
-                await followingUser.updateOne({ $pull: { followers: id } })
+                await followUser.updateOne({ $pull: { followers: currentUserId } })
+                await followingUser.updateOne({ $pull: { following: id } })
                 res.status(200).json("User unfollowed successfully")
             } else {
                 res.status(200).json("User don't followed by You")
